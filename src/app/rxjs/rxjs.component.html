@@ -1,0 +1,21 @@
+<p>rxjs works!</p>
+
+<div *ngIf="agentName">
+  {{ agentName }}
+</div>
+
+<div *ngIf="orderName">
+  {{ orderName }}
+</div>
+
+<button #validateBtn (click)="rxJsEventObservable()">
+  Click for Observable
+</button>
+
+<a
+  href="http://localhost:4200/test-url"
+  #getLink
+  (mouseover)="getEventObservable()"
+>
+  Root Link
+</a>
